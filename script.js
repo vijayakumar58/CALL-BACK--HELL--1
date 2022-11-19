@@ -1,39 +1,53 @@
-var target=document.getElementById('foo')
-target.innerHTML=""
-document.body.append(target);
+
+const target=document.createElement("div");
+    target.setAttribute("class","in")
+    target.setAttribute("id","inde");
+    target.innerHTML=""
+    document.body.append(target);
 f1=()=>{
    setTimeout(()=>{
      console.log("10")
+     target.innerHTML="10"
      f2=()=>{
       setTimeout(()=>{
         console.log("9")
+        target.innerHTML="9"
         f3=()=>{
           setTimeout(()=>{
             console.log("8")
+            target.innerHTML="8"
             f4=()=>{
               setTimeout(()=>{
                 console.log("7")
+                target.innerHTML="7"
                 f5=()=>{
                   setTimeout(()=>{
                     console.log("6")
+                    target.innerHTML="6"
                     f6=()=>{
                       setTimeout(()=>{
                         console.log("5")
+                        target.innerHTML="5"
                         f7=()=>{
                           setTimeout(()=>{
                             console.log("4")
+                            target.innerHTML="4"
                             f8=()=>{
                               setTimeout(()=>{
                                 console.log("3")
+                                target.innerHTML="3"
                                 f9=()=>{
                                   setTimeout(()=>{
                                     console.log("2")
+                                    target.innerHTML="2"
                                     f10=()=>{
                                       setTimeout(()=>{
                                         console.log("1")
+                                        target.innerHTML="1"
                                         f11=()=>{
                                           setTimeout(()=>{
                                             console.log("HAPPY INDEPENDENCE DAY")
+                                            target.innerHTML="HAPPY INDEPENDENCE DAY"
                                           },1000)
                                          }
                                          f11()
