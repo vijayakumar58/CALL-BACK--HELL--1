@@ -1,3 +1,6 @@
+var target=document.getElementById('foo')
+target.innerHTML=""
+document.body.append(target);
 f1=()=>{
    setTimeout(()=>{
      console.log("10")
