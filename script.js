@@ -1,7 +1,7 @@
 
 const target=document.createElement("div");
     target.setAttribute("class","in")
-    target.setAttribute("id","inde");
+    // target.setAttribute("id","inde");
     target.innerHTML=""
     document.body.append(target);
 f1=()=>{
@@ -47,6 +47,7 @@ f1=()=>{
                                         f11=()=>{
                                           setTimeout(()=>{
                                             console.log("HAPPY INDEPENDENCE DAY")
+                                            target.setAttribute("id","ind")
                                             target.innerHTML="HAPPY INDEPENDENCE DAY"
                                           },1000)
                                          }
